@@ -9,6 +9,7 @@ import lombok.Setter;
 import org.springframework.stereotype.Repository;
 
 import java.sql.Timestamp;
+import java.util.List;
 
 @Getter
 @Setter
@@ -21,5 +22,9 @@ public class Questionario {
     private String descricao;
     private Timestamp data_criacao;
     private String id_usuario_criacao;
+    private List<String> perguntas;
 
+    public Questionario() {
+
+    }
 }
